@@ -5,14 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>srcset demo</title>
+    
+    <style>
+        div.container {
+            margin: auto;
+            width: 500px;
+            background: #eee;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <div style="margin: auto; width: 70%; background: #eee;">
-        <img src="images/horse_small.jpg" srcset="https://via.placeholder.com/800x600 800w">
-        <br />
-        <img src="images/horse_small.jpg" srcset="https://via.placeholder.com/800x600">
-        <br />
-        <img src="https://via.placeholder.com/800x600" alt="sample">
+    <div class="container">
+        <img src="https://placeimg.com/400/300" srcset="https://via.placeholder.com/400x300 400w, https://via.placeholder.com/200x150 200w">
+        <br /><br /><br />
+        <img src="https://placeimg.com/400/300" srcset="https://via.placeholder.com/400x300 400w">
+        <br /><br /><br />
+        <img src="https://placeimg.com/400/300" srcset="https://via.placeholder.com/400x300">
+        <br /><br /><br />
+        <img src="https://via.placeholder.com/400x300" alt="sample">
     </div>
 </body>
 </html>
